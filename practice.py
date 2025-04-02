@@ -29,7 +29,7 @@ print(b)
 
 # 5. 리스트 역순 정렬
 c = [1, 3, 5, 4, 2]
-c.sort(reverse=True)
+c.sort(reverse = True)
 print(c)
 
 # 6. 리스트 문자열로 만들기
@@ -55,7 +55,7 @@ for v in e.values():
 # 10. 리스트에서 중복값 제거
 f = [1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5]
 f = set(f)
-print(f)
+print(10, list(f))
 
 # 11. 파이썬의 변수
 a = b = [1, 2, 3]
