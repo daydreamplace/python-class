@@ -35,6 +35,38 @@ b.second -= 1
 # print(a.first)
 # print(a.add())
 # print(b.add())
-print(b.sub())
+# print(b.sub())
 
 
+# 상속
+# 새 클래스를 생성하지만 FourCal 클래스를 상속받음
+class MoreFourCal(FourCal):
+    # 이미 FourCal 클래스에 정의된 div를 덮어쓴다. 이를 오버라이딩이라고 함!
+    def div(self):
+        if self.second == 0:
+            return 0
+        else:
+            return self.first / self.second
+    # 제곱
+    def pow(self):
+        result = self.first ** self.second
+        return result
+
+
+# 인스턴스 생성
+a = MoreFourCal(4, 2)
+# 
+b = FourCal(4, 2)
+
+# print(a.first)
+# print(a.div())
+# print(a.pow())
+# print(b.pow()) # FourCal에는 pow 메서드 없어서 에러 발생
+
+
+# 오버라이딩 메서드 사용해보기
+a = MoreFourCal(4, 0)
+print(a.div())
+
+b = FourCal(4, 0)
+print(b.div())
