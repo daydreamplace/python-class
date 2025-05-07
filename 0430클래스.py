@@ -1,17 +1,32 @@
-result1 = 0
-result2 = 0
+class Calculator:
+    def __init__(self):
+        self.result = 0 # result라는 변수에 0을 넣어줌
 
-def add1(num):
-    global result1
-    result1 += num
-    return result1
+    def add(self, num): # 파이썬 class는 self를 넣어줘야 함!!
+        self.result += num
+        return self.result
+    
+    def sub(self, num):
+        self.result -= num
+        return self.result
 
-def add2(num):
-    global result2
-    result2 += num
-    return result2
+cal1 = Calculator() # cal1이라는 변수에 Calculator라는 class를 넣어줌
+cal2 = Calculator() # cal2라는 변수에 Calculator라는 class를 넣어줌
 
-print(add1(3))
-print(add1(4))
-print(add2(3))
-print(add2(7))
+# print(cal1.add(3))
+# print(cal1.add(4))
+# print(cal2.add(3))
+# print(cal2.add(7))
+
+print(cal1.sub(5))
+print(cal1.sub(2))
+
+print(cal2.sub(4))
+print(cal2.sub(3))
+
+
+
+
+a = [1, 2, 3, 4]
+
+a.sort() # 오름차순 정렬
