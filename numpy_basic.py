@@ -57,3 +57,135 @@ newarr = arr.reshape(4, 3) # 1차원에서 2차원으로 재구성
 newarr2 = arr.reshape(2, 3, 2) # 1차원에서 3차원으로 재구성
 # print(newarr2)
 
+
+# x = [1, 2, 3, 4]
+# y = [4, 5, 6, 7]
+# z = np.add(x, y)
+# print(z)
+
+# add() 함수 사용 예시
+arr1 = np.array([10, 11, 12, 13, 14, 15])
+arr2 = np.array([20, 21, 22, 23, 24, 25])
+newarr = np.add(arr1, arr2)
+# print(newarr)
+
+# subtract() 함수 사용 예시
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+arr2 = np.array([20, 21, 22, 23, 24, 25])
+newarr = np.subtract(arr1, arr2)
+# print(newarr)
+
+# multiply() 함수 사용 예시
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+arr2 = np.array([20, 21, 22, 23, 24, 25])
+newarr = np.multiply(arr1, arr2)
+# print(newarr)
+
+# divide() 함수 사용 예시
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+arr2 = np.array([3, 5, 10, 8, 2, 33])
+newarr = np.divide(arr1, arr2)
+# print(newarr)
+
+# power() 함수 사용 예시
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+arr2 = np.array([3, 5, 6, 8, 2, 33])
+newarr = np.power(arr1, arr2)
+# print(newarr)
+
+# mod() 함수 사용 예시
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+arr2 = np.array([3, 7, 9, 8, 2, 33])
+newarr = np.mod(arr1, arr2)
+# print(newarr)
+
+# remainder() 함수 사용 예시
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+arr2 = np.array([3, 7, 9, 8, 2, 33])
+newarr = np.remainder(arr1, arr2)
+# print(newarr)
+
+# divmod() 함수 사용 예시
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+arr2 = np.array([3, 7, 9, 8, 2, 33])
+newarr = np.divmod(arr1, arr2)
+# print(newarr)
+
+# absolute() 함수 사용 예시
+arr = np.array([-1, -2, 1, 2, 3, -4])
+newarr = np.absolute(arr)
+# print(newarr)
+
+# abs() 함수 사용 예시
+arr = np.array([-1, -2, 1, 2, 3, -4])
+newarr = np.absolute(arr)
+# print(newarr) 
+
+# trunc() 함수 사용 예시
+arr = np.trunc([-3.1666, 3.6667])
+# print(arr)
+
+# around() 함수 사용 예시
+arr = np.around(3.1666, 2)
+# print(arr)
+
+# floor() 함수 사용 예시
+arr = np.floor([-3.1666, 3.6667])
+# print(arr)
+
+# ceil() 함수 사용 예시
+arr = np.ceil([-3.1666, 3.6667])
+# print(arr)
+
+# logs
+arr = np.arange(1, 10)
+# print(np.log2(arr))
+
+# log2() 함수 사용 예시
+arr = np.arange(1, 10)
+# print(np.log10(arr))
+
+# log e
+arr = np.arange(1, 10)
+# print(np.log(arr))
+
+
+# 
+from math import log
+nplog = np.frompyfunc(log, 2, 1)
+# print(nplog(100, 15))
+
+# product() 함수 사용 예시
+arr = np.array([5, 6, 7, 8])
+newarr = np.cumprod(arr)
+# print(newarr)
+
+# diff() 함수 사용 예시
+arr = np.array([10, 15, 25, 5])
+newarr = np.diff(arr, n = 2)
+# print(newarr)
+
+# lcm
+num1 = 4
+num2 = 6
+x = np.lcm(num1, num2)
+
+# print(x) 
+
+arr = np.array([3, 6, 9])
+x = np.lcm.reduce(arr)
+# print(x)
+
+arr = np.arange(1, 11)
+x = np.lcm.reduce(arr)
+# print(x) 
+
+# gcd()
+num1 = 6
+num2 = 9
+x = np.gcd(num1, num2)
+# print(x)
+
+arr = np.array([20, 8, 32, 36, 16])
+x = np.gcd.reduce(arr)
+print(x)
